@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 16</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="js/ejercicio16.js"></script>
+</head>
+<body>
+    <h2>Calculadora de Números</h2>
+    <form id="formCalculadora">
+        <label for="numero1">Número 1:</label>
+        <input type="text" id="numero1" placeholder="Ej: 10" required>
+
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2" placeholder="Ej: 5" required>
+
+        <button type="button" onclick="calcularOperacion('suma')">Sumar</button>
+        <button type="button" onclick="calcularOperacion('resta')">Restar</button>
+        <button type="button" onclick="calcularOperacion('multiplicacion')">Multiplicar</button>
+        <button type="button" onclick="calcularOperacion('division')">Dividir</button>
+
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" readonly>
+    </form>
+   
+</body>
+</html>
